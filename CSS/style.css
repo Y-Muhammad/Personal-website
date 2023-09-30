@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#000000;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+}
+
+nav li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav li a:hover::after{
+  width: 100px;
+}
+
+.lines{
+  display: none;
+}
+
+.lines div{
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+}
+
+.header-text{
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.github, .linkedin{
+  padding: 3%;
+}
+
+.I-container{
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+
+.I-container h1{
+  font-size: 60px;
+}
+
+.I-container p{
+  font-size: 25px;
+}
+
+.S-container{
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+
+.S-container h1{
+  font-size: 60px;
+  justify-content: center;
+}
+
+.css, .html, .java, .javas, .php, .python, .sql{
+  width: 100px;
+  padding: 10px;
+}
+
+.A-container{
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+
+.A-container h1{
+  font-size: 60px;
+}
+
+.A-container p{
+  font-size: 25px;
+}
+
+.W-container{
+  padding: 10px 10%;
+  margin-top: 30px;
+}
+
+.W-container h1{
+  font-size: 60px;
+}
+
+.Example {
+  size: 10cm;
+  padding: 5%;
+}
+
+.colume p{
+  font-size: 25px;
+  padding: 5%;
+}
+
+.C-container{
+  padding: 10px 10%;
+}
+
+.C-container h1{
+  font-size: 60px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px){
+  nav li{
+    position: absolute;
+    right: 0%;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+}
+}
